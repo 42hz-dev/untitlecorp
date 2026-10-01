@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1 id="greeting">불러오는 중...</h1>
+
+  <script>
+    fetch('/api')
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById('greeting').textContent = text;
+      });
+  </script>
+</body>
+</html>

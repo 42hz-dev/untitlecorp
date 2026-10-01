@@ -1,0 +1,18 @@
+# 환경변수 (비밀번호 포함)
+.env
+!.env.example
+
+# Node / Nest
+web-api/node_modules/
+web-api/dist/
+web-api/coverage/
+crm-api/node_modules/
+crm-api/dist/
+crm-api/coverage/
+*.log
+npm-debug.log*
+
+# OS / 에디터
+.DS_Store
+.idea/
+.vscode/
