@@ -10,6 +10,16 @@ Nginx + NestJS(TypeScript) + MariaDB 개발 환경 (Docker Compose)
 
 > 로컬에 Node 설치 없이 **모든 작업을 Docker로** 처리합니다.
 
+## 접속 URL
+
+`docker compose up -d` 실행 후 아래 주소로 접속합니다.
+
+| 사이트 | 페이지 | API |
+|---|---|---|
+| web | http://localhost | http://localhost/api |
+| crm | http://crm.localhost | http://crm.localhost/api |
+| DB (MariaDB) | `localhost:3306` | - |
+
 ## 폴더 구조
 
 ```
