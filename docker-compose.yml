@@ -5,6 +5,8 @@ services:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/conf.d/web.conf:/etc/nginx/conf.d/web.conf:ro
+      - ./nginx/conf.d/crm.conf:/etc/nginx/conf.d/crm.conf:ro
       - ./nginx/proxy_headers.conf:/etc/nginx/proxy_headers.conf:ro
       - ./web:/usr/share/nginx/html/web:ro
       - ./crm:/usr/share/nginx/html/crm:ro
