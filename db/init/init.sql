@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS web_db  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS crm_db  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE USER IF NOT EXISTS 'web_user'@'%' IDENTIFIED BY 'webpass123';
+CREATE USER IF NOT EXISTS 'crm_user'@'%' IDENTIFIED BY 'crmpass123';
+
+GRANT ALL PRIVILEGES ON web_db.* TO 'web_user'@'%';
+GRANT ALL PRIVILEGES ON crm_db.* TO 'crm_user'@'%';
+
+FLUSH PRIVILEGES;

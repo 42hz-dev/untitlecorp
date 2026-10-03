@@ -1,5 +1,6 @@
 # 환경변수 (비밀번호 포함)
 .env
+.env.*
 !.env.example
 
 # Node / Nest
@@ -16,3 +17,6 @@ npm-debug.log*
 .DS_Store
 .idea/
 .vscode/
+
+# DB
+db/data/
